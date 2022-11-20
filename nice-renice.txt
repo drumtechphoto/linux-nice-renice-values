@@ -1,0 +1,11 @@
+#Changing nice / renice values for cpu process prioritization.
+
+#find the PID of the process you want to proiritize by using "sudo htop"
+
+Command to change the value, example:
+#changes the proirity to a "-15" value giving the process a higher cpu proirty, in this case, my "Plex Media Serv" running in a Docker container.
+sudo renice --priority -15 --pid 31041
+
+# the bigger the negative number, the more proiritiy it is given.  
+
+#Value Range: 20 to -20.  The More positive the value, the priorority is lessened.
