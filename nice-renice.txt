@@ -9,3 +9,14 @@ sudo renice --priority -15 --pid 31041
 # the bigger the negative number, the more proiritiy it is given.  
 
 #Value Range: 20 to -20.  The More positive the value, the priorority is lessened.
+
+#Change value using the --user flag
+#Example the --user I am adjusting is PlexMediaServer
+sudo renice --priority -15 --user 297536 
+
+
+# Learned information from howtogeek.com;
+Post URL:
+https://www.howtogeek.com/411979/how-to-set-process-priorities-with-the-nice-and-renice-commands-in-linux/
+Credit = 
+DAVE MCKAY of How-To Geek
